@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art & Technology — p5.js Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#" class="brand">A&T p5.js Portfolio</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle menu</span>
+          ☰
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="eyebrow">Art & Technology Student</p>
+        <h1>Computational sketches, interactive worlds, and audiovisual experiments.</h1>
+        <p>
+          A curated collection of five p5.js projects exploring color systems, generative
+          forms, and embodied interaction.
+        </p>
+        <a href="#projects" class="button button-primary">Explore Projects</a>
+      </section>
+
+      <section id="projects" class="projects container">
+        <div class="section-heading">
+          <h2>Featured p5.js Works</h2>
+          <p>Click any card to discover process notes and interactive outputs.</p>
+        </div>
+
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>About this Portfolio</h2>
+        <p>
+          This site is designed as a clean yet experimental portfolio system for class review,
+          studio critique, and exhibition prep. Replace image paths and project links with your
+          final assets when ready.
+        </p>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Art & Technology Portfolio</p>
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
